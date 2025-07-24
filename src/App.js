@@ -22,7 +22,7 @@ function App() {
     }
 
     try {
-      const response = await axios.post("http://localhost:8000/match_bulk", formData);
+      const response = await axios.post("https://resume-backend-thrinesh.azurewebsites.net/docs/match_bulk", formData);
       setResult(response.data);
     } catch (error) {
       console.error("Error:", error);
